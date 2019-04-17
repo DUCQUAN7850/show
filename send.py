@@ -1,5 +1,5 @@
 import requests
-url = 'http://10.5.37.84:4567/quannd'
+url = 'http://2e2aef11.ngrok.io/upload/quan'
 files = {'image': open('1.PNG', 'rb')}
 r=requests.post(url, files=files)
-print(r.text)
+print("https://ntimg.aiservice.vn/"+str(r.text))
